@@ -9,9 +9,7 @@
 		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
 	<munit:config name="jenkins-with-mule-test-suite.xml" />
-<http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="a6a8bbe0-4fb2-476d-aefe-76fc63cf597d" >
-		<http:request-connection host="localhost" port="8084" />
-	</http:request-config>
+
 	<munit:test name="new-test-suite-jenkins-with-muleFlowTest" doc:id="87405e38-f70b-4538-af3e-be041e5fc8e3" description="Test">
 		<munit:execution>
 			<flow-ref doc:name="Flow Reference" doc:id="d78a0b00-dd3d-4cc9-b7f5-b0db10160fc5" name="jenkins-with-muleFlow"/>
